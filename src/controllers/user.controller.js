@@ -150,7 +150,7 @@ const loginUser = async (req, res) => {
 };
 
 const logoutUser = async (req, res) => {
-  
+  User.findByIdAndUpdate();
 };
 
-export { registerUser, loginUser };
+export { registerUser, loginUser, logoutUser };
